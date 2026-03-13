@@ -21,3 +21,4 @@ jobs:
 
       - name: Export Project
         run: npx expo export --platform ios
+ 
