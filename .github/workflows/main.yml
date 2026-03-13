@@ -9,4 +9,8 @@ jobs:
         with:
           node-version: 18
       - run: npm install
-      - run: npx expo export --platform ios
+      - run: npx expo export --platform ios --output-dir dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: iJIT-Build
+          path: dist/
