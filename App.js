@@ -239,11 +239,5 @@ const styles = StyleSheet.create({
   stepCardText: { color: '#FFF', fontSize: 16, lineHeight: 22 },
   successNote: { color: '#32D74B', fontSize: 15, fontWeight: 'bold', textAlign: 'center', marginVertical: 20 },
   closeBtn: { backgroundColor: '#FFF', padding: 20, borderRadius: 20, alignItems: 'center', marginTop: 10 },
-  closeBtnText: { color: '#000', fontWeight: 'bold', fontSize: 18 }
+  closeBtnText: { color: '#000', fontWeight: 'bold', fontSize: 18 } 
 });
-"ios": {
-  "infoPlist": {
-    "UIFileSharingEnabled": true,
-    "LSSupportsOpeningDocumentsInPlace": true
-  }
-}
