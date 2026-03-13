@@ -1,24 +1,16 @@
 name: Build iJIT App
-on: [push] # This means every time you save, it builds!
-
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
-
-      - name: Install Tools
-        run: npm install -g expo-cli
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Export Project
-        run: npx expo export --platform ios
- 
+      - run: npm install
+      - run: npx expo export --platform ios --output-dir dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: iJIT-Build
+          path: dist/
