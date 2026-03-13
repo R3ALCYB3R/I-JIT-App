@@ -3,12 +3,9 @@
     "name": "iJIT App",
     "slug": "ijit-app",
     "version": "1.0.0",
-    "slug": "ijit-app",
     "sdkVersion": "50.0.0",
-    "platforms": ["ios"],
     "ios": {
-      "bundleIdentifier": "com.ijit.app",
-      "supportsTablet": true
+      "bundleIdentifier": "com.ijit.app"
     }
   }
 }
