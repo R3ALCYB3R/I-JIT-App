@@ -1,8 +1,19 @@
 {
+  "name": "ijit-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "export": "expo export"
+  },
   "dependencies": {
     "expo": "~50.0.0",
     "expo-file-system": "~16.0.0",
     "react": "18.2.0",
     "react-native": "0.73.4"
-  }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
 }
