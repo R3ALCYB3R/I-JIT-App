@@ -1,0 +1,6 @@
+"ios": {
+  "infoPlist": {
+    "UIFileSharingEnabled": true,
+    "LSSupportsOpeningDocumentsInPlace": true
+  }
+}
