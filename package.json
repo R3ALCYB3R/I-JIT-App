@@ -1,7 +1,7 @@
 {
   "name": "ijit-app",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "App.js",
   "scripts": {
     "start": "expo start",
     "export": "expo export"
