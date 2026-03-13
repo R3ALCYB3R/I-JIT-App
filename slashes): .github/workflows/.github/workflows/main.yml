@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: List Files (The Eyes Step)
+        run: ls -R
       - uses: actions/setup-node@v4
         with:
           node-version: 18
